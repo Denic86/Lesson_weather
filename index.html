@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+	<div class="wrapper">
+	<!-- Header -->
+	<header class="header">
+	<div class="header__container -container">
+		<a href="" class="header__logo"></a>
+		<nav class="header__menu">
+			<ul class="header__list">
+				<li><a href="" class="header__link">HTML</a></li>
+				<li><a href="" class="header__link">CSS</a></li>
+				<li><a href="" class="header__link">JS</a></li>
+				<li>
+					<a href="" class="header__link">#Strada</a>
+					<ul class="header__sublist">
+						<li>
+							<a href="#" class="header__sublink">
+								Задание #55-#61: "Погода"
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__box"></div>
+	</div>
+</header>
+	
+	<!-- Main Page -->
+		<main class="page">
+			<div class="learn">
+				<div class="learn__container -container">
+					<div class="learn__header">
+						<div class="learn__title -title">Задание #55-#61: "Погода"</div>
+					</div>
+					<div class="learn__chapters">
+						<div class="learn__chapter chapter-learn">
+							<div class="chapter-learn__subtitle -subtitle">
+								<span class="chapter-learn__number">1.</span>
+								Глава один HTML
+							</div>
+							<div class="chapter-learn__content">
+								<a href="https://t.me/artemxsd" class="-link">Взять готовую верстку</a>
+							</div>
+						</div>
+						<div class="learn__chapter chapter-learn">
+							<div class="chapter-learn__subtitle -subtitle">
+								<span class="chapter-learn__number">2.</span>
+								Глава один CSS
+							</div>
+							<div class="chapter-learn__content">
+								Находится в разработке
+							</div>
+						</div>
+						<div class="learn__chapter chapter-learn">
+							<div class="chapter-learn__subtitle -subtitle">
+								<span class="chapter-learn__number">3.</span>
+								Глава три JS
+							</div>
+							<div class="chapter-learn__content">
+								<div class="chapter-learn__introduction -introduction">
+									Так как погода длинное приложение, писать его лучше этапами. Если где-то сомневаетесь, выводите результат в консоль -
+									самый простой и быстрый способ проверить работоспособность, и увидеть то ли вы хотели. Набраться терпения и по шагам к
+									успеху. Если где-то появляются затруднения, всегда можно обратиться к любимому поисковику, если не получается решить
+									самому, милости просим за помощью к нам.
+								</div>
+								<div class="chapter-learn__block block-chapter">
+									<div class="block-chapter__name">Поиск элементов</div>
+									<div class="block-chapter__introduction -introduction">
+										Когда мы начинаем писать новое приложение, то первым делом необходимо создать переменные, с которыми будем работать.
+										Часть из них создается с помощью поиска в DOM. Глобальные переменные объявляются в начале скрипта. Ниже
+										представлены универсальные методы поиска*:
+									</div>
+									<ul class="block-chapter__list">
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												querySelector
+											</div>
+											<a href=https://learn.javascript.ru/searching-elements-dom#querySelector" target="_blank" class="block-chapter__link -link">Узнать больше</a>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												querySelectorAll
+											</div>
+											<a href="https://learn.javascript.ru/searching-elements-dom#querySelectorAll" target="_blank" class="block-chapter__link -link">Узнать больше</a>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												closest
+											</div>
+											<a href="https://learn.javascript.ru/searching-elements-dom#closest" target="_blank" class="block-chapter__link -link">Узнать больше</a>
+											<div class="block-chapter__introduction -introduction">
+												closest - это метод, который ищет ближайшего предка по селектору, при этом сам элемент входит в поиск. Синтаксис: 
+												<p>elem.closest(“селектор css”).</p>
+												*Когда ищем по селектору, необходимо ставить знак селектора, как в css (“#id”, “.класс”).
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Живые и неживые коллекции
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Существуют живые и неживые коллекции. querySelectorAll относится к последней категории: возвращает статическую коллекцию
+												DOM-элементов, поэтому при изменении DOM, коллекция сама не будет меняться. В коллекции хранятся только те элементы,
+												которые были найдены в момент объявления переменной. Если мы хотим добавить в коллекцию изменения, её нужно обновить
+												через новый поиск.
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="chapter-learn__block block-chapter">
+									<div class="block-chapter__name">Браузерные события</div>
+									<div class="block-chapter__introduction -introduction">
+										Очень часто на страничке происходят разные события, будь то нажатие клавиши мыши или клавиатуры, отправка формы или даже
+										просто пролистывание вниз. Хочется, чтобы по этим событиям что-то происходило. В нашем случае, мы хотим, чтобы
+										переключались табы или просто приходил ответ на наш поиск города. Вот некоторые варианты событий, по которым нам
+										необходимо производить некоторые действия:
+									</div>
+									<ul class="block-chapter__list">
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												По мыши
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												click – происходит, когда кликнули на элемент левой кнопкой мыши (на устройствах с сенсорными экранами оно происходит
+												при касании).
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												На элементах управления
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												submit – пользователь отправил форму &ltform&gt.
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Этих событий хватит для нашей задачи, но их нужно как-то обрабатывать:
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Обработчик событий addEventListener (добавляем прослушку на найденные элементы)
+											</div>
+											<a href="https://learn.javascript.ru/introduction-browser-events#addeventlistener" target="_blank"
+												class="block-chapter__link -link">Узнать больше</a>
+											<div class="block-chapter__introduction -introduction">
+												Необходимо назначить обработчик при помощи специального метода addEventListener. Синтаксис: 
+												<p>element.addEventListener(“событие”, nameFunction - имя функции обработки события). </p>
+											</div>
+											<div class="block-chapter__introduction -introduction">
+											Функцию обработки события желательно писать отдельно. В неё не рекомендуется что-то передавать, однако event (событие) в
+											неё автоматически приходит. При объявлении функции необходимо указать параметр event. Синтаксис:
+											<p>function nameFunction (event){тело функции}.</p>
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												event.preventDefault()
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												event.preventDefault() – отменяет действие браузера по умолчанию для события. Например: отмена отправки формы при
+												событии “submit”; отмена перехода по ссылке; отмена открытия контекстного меню при клике правой кнопкой мыши.
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="chapter-learn__block block-chapter">
+									<div class="block-chapter__name">Отправка запроса</div>
+									<div class="block-chapter__introduction -introduction">
+										После того как мы обработали событие «отправки формы» (submit), нам необходимо сделать сетевой запрос на сайт, а
+										дождаться ответа с него нам помогут:
+									</div>
+									<ul class="block-chapter__list">
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Промисы
+											</div>
+											<a href="https://learn.javascript.ru/promise-basics" target="_blank"
+												class="block-chapter__link -link">Узнать больше</a>
+											<div class="block-chapter__introduction -introduction">
+												- это специальный объект, который используется для отложенных вычислений. Он возвращает, своего рода, обещание, получить
+												результат в неопределенном будущем.
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Результатом запроса может быть как Ошибка, так и успешный ответ. Поэтому и результатом промиса может быть Ошибка или
+												Успех, а чтобы обработать этот результат у нас есть:
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												then, catch
+											</div>
+											<a href="https://learn.javascript.ru/promise-basics#potrebiteli-then-catch" target="_blank"
+												class="block-chapter__link -link">Узнать больше</a>
+											<div class="block-chapter__introduction -introduction">
+												<b>Обработчик then возвращает промис.</b> У then есть два аргумента: один для обработки успешного выполнения промиса, второй
+												для обработки ошибки. Чаще всего, используется then с одним аргументом. А для обработки ошибки используется метод catch.
+												Синтаксис:
+												<p>promise.then(result => функция обработки результата)</p>
+												<p>promise.catch(error => функция обработки ошибки)</p>
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												fetch
+											</div>
+											<a href="https://learn.javascript.ru/fetch" target="_blank"
+												class="block-chapter__link -link">Узнать больше</a>
+											<div class="block-chapter__introduction -introduction">
+												- это метод отправки запроса на сервер и получения результата информации с него в виде промиса. В данном промисе
+												хранится информация о самом запросе (стутус, заголовок и т.д.)
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Но чтобы воспользоваться корректно fetch(), нам необходимо уже знать всю информацию. Сайт, на который мы будем
+												обращаться, API ключ (с помощью него сайт определяет нас как пользователя) и, конечно же, имя города, которое мы получили
+												в обработке формы. Но так как это промис, то нам его нужно правильно обработать:
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												1. В первом then, используя метод json() на результат, можно получить информацию в виде промиса, но уже с обработанными
+												данными.
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												2. Во втором then приходит также промис, полученный методом json() в первом then. При успешном выполнении промиса мы
+												получаем результат в виде необходимой информации (в данном случае объект с данными), с ним уже можем работать
+												(предпочтительно передать в другую функцию для обработки).
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Но бывает и такое, что при выполнении могут возникнуть ошибки. Мы можем их проигнорировать, но можем, обработав их,
+												сообщить пользователю, что возможно неполадки в сети, или город введён неверно:
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Обработка ошибок
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Промис завершается с ошибкой, если fetch не смог выполнить HTTP-запрос, например при ошибке сети или если нет такого
+												сайта. HTTP-статусы 404 и 500 не являются ошибкой. Удовлетворительные статусы находятся в диапазоне от 200 до 299
+												включительно.
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="chapter-learn__block block-chapter">
+									<div class="block-chapter__name">Работа с ответом</div>
+									<div class="block-chapter__introduction -introduction">
+										И вот отправив корректно запрос, и обработав его, мы получаем данные, и дальше решаем что с ними сделать. Стоит ли их
+										ещё обработать для дальнейшей работы, или возможно будем работать с такими которые получили:
+									</div>
+									<ul class="block-chapter__list">
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Возвращается объект с данными
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Можно для наглядности вывести себе этот объект в консоль, чтобы посмотреть, какие в нём есть свойства и по каким ключам стоит обратиться к нему, чтобы получить ту или иную информацию. Также есть вариант узнать на сайте, в каком виде он отправляет данные.
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Записываем данные в DOM:
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												textContent
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Существует достаточно много способов, как внести в DOM-элементы новые данные, однако предпочтительнее использовать
+												textContent. Синтаксис:
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												elem.textContent = “” – можно записать как переменную, так и непосредственно текст. Важно помнить, что всё написанное отобразится в виде текста(теги, классы и т.д.), исключения составляют переменные в косых кавычках (`${переменная}`). <b>Если кавычки оставить пустыми, то всё содержимое очистится, в том числе вложенные DOM-элементы.</b>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="chapter-learn__block block-chapter">
+									<div class="block-chapter__name">Переключение табов</div>
+									<div class="block-chapter__introduction -introduction">
+										Хорошо, когда видно краткую необходимую информацию, но что если нам хотелось бы больше подробностей, то для этого у нас
+										заготовлены табы (вкладки), на которых может находиться нужная нам информация. А чтоб нам их переключать:
+									</div>
+									<ul class="block-chapter__list">
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Слушаем click в области с кнопками
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Меняем активный таб
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Для смены активного класса можно использовать методы classList:
+												<ul class="block-chapter__sublist">
+													<li class="block-chapter__subitem">
+														toggle – добавляет класс, если его нет, а если существует, то удаляет;
+													</li>
+													<li class="block-chapter__subitem">
+														add – добавить класс;
+													</li>
+													<li class="block-chapter__subitem">
+														remove – убрать класс.
+													</li>
+												</ul>
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Синтаксис:
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												elem.classList.add(“класс”) – в данном случае <b>точка перед классом не ставится</b>, так как другие селекторы
+												записать нельзя.
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="chapter-learn__block block-chapter">
+									<div class="block-chapter__name">Сохраняем города</div>
+									<div class="block-chapter__introduction -introduction">
+										Ну вот у нас, по идее, есть рабочая программа, но вводить каждый раз после перезагрузки страницы любимые города заново не
+										приятное дело. Нам поможет работа с «локальным хранилищем». Наши действия:
+									</div>
+									<ul class="block-chapter__list">
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Слушаем клик по сердечку
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Добавляем в localStorage
+											</div>
+											<a href="https://learn.javascript.ru/localstorage" target="_blank"
+												class="block-chapter__link -link">Узнать больше</a>
+											<div class="block-chapter__introduction -introduction">
+												localStorage – это встроенный в браузер объект с данными. В него можно внести необходимую информацию. <b>Назначение localStorage: это специальный встроенный в браузер объект, который хранит информацию, не теряя её при перезагрузке браузера.</b> Основными методами являются:
+												<a href="https://learn.javascript.ru/localstorage#tolko-stroki" target="_blank" class="block-chapter__link -link">Узнать
+													больше</a>
+												<ul class="block-chapter__sublist">
+													<li class="block-chapter__subitem">
+														setItem(key, value) – сохранить пару ключ/значение;
+													</li>
+													<li class="block-chapter__subitem">
+														getItem(key) – получить данные по ключу key;
+													</li>
+													<li class="block-chapter__subitem">
+														removeItem(key) – удалить данные с ключом key;
+													</li>
+													<li class="block-chapter__subitem">
+														clear() – удалить всё;
+													</li>
+													<li class="block-chapter__subitem">
+														key(index) – получить ключ на заданной позиции.
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="block-chapter__item">
+											<div class="block-chapter__caption">
+												Создаем функцию render для вывода сохраненных городов
+											</div>
+											<div class="block-chapter__introduction -introduction">
+												Данная функция необходима для синхронизации UI и массива с данными. Её целью является обновить данные, которые выводятся
+												(в данном случае сохраненные города), поэтому её необходимо вызывать при <b>КАЖДОМ</b> изменении массива. В ней получаем
+												актуальные данные из localStorage.
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="chapter-learn__block block-chapter">
+									<div class="block-chapter__name">Подсказка. Открывать в крайнем случае</div>
+									<div class="block-chapter__button -link">Посмотреть</div>
+									<div class="block-chapter__introduction -introduction">
+										Для начала нужно понимать, что если вы обратились сюда за помощью, то ничего страшного. Основной навык программиста это
+										поиск информации, нужно понимать, что всю информацию в голове держать не реально, но главное помнить где её можно
+										получить.
+									</div>
+									<div class="block-chapter__display">
+										<ul class="block-chapter__list">
+											<li class="block-chapter__item">
+												<div class="block-chapter__caption">
+													Для чего нам «локальное хранилище»
+												</div>
+												<div class="block-chapter__introduction -introduction">
+													Итак для начала разберёмся для чего нам <span class="block-chapter__hint" title="localStorage">«локальное хранилище»*</span>. Представим, что вы вводили кучу городов, сохраняли их в
+													свой список любимых, но после перезагрузки страницы или браузера, всё терялось. Чтоб этого избежать мы можем при каждой
+													загрузке страницы, доставать города из «локального хранилища». Главное для корректной работы нужно понимать, что на
+													каждом компьютере своё «локальное хранилище» и то что у вас что-то сохранено в нём, не значит, что оно будет и у других,
+													важно об этом помнить когда работаете с пустым хранилищем.
+												</div>
+												<div class="block-chapter__introduction -introduction">
+													Важно помнить, что «локальное хранилище» это как объект, в нём есть ключи, и значения по этим ключам. Ключи не могут
+													повторяться, если вы будете записывать в него по одному и тому же ключу, то вы будете перезаписывать каждый раз
+													значение. Ключами могут быть только строки. Да и хранить в нём можно только строки. Но как же быть если нам нужно
+													сохранить массив? Правильно, мы можем воспользоваться JSON. Благодаря его методам <span class="block-chapter__hint" title="stringify">«перевода в строку» **</span class="block-chapter__hint">, и методу
+													<span class="block-chapter__hint" title="parse">«парсинга» ***</span> значения. Главное понимать, что парсинг пустого значения или не объявленных переменных приведёт к ошибке
+													вашего скрипта, и программа перестанет работать корректно. Поэтому необходимо добавлять необходимые проверки.
+												</div>
+											</li>
+											<li class="block-chapter__item">
+												<div class="block-chapter__caption">
+													Как мы хотим работать с «локальным хранилищем»
+												</div>
+												<div class="block-chapter__introduction -introduction">
+													Итак, теперь мы знаем, как переводить массив из одного формата, в другой. Теперь стоит разобраться как мы хотим работать
+													с «локальным хранилищем». Можно написать несколько функции, к которым мы будем обращаться и вынести их в модуль (можно и
+													не выносить), либо можно создать объект, в него записать те же функции, но в виде методов. Потом по коду обращаться либо
+													к функциям, либо к методам через объект. В объекте также можно записать константой «ключ», чтоб было удобнее обращаться
+													к нему.
+												</div>
+												<div class="block-chapter__introduction -introduction">
+													От того с чем мы будем работать (с массивом или просто с именем) зависит как будут выглядеть наши функции. Разберём
+													простой пример работы с массивом поэтапно
+													<ul class="block-chapter__sublist">
+														<li class="block-chapter__subitem">
+															1. Для начала нужно в коде создать переменную, в которой будет храниться массив имён городов. И присваиваем этой
+															переменной пустой массив, который позже будет заполняться
+														</li>
+														<li class="block-chapter__subitem">
+															2. Вызываем функцию за отрисовку/заполнение списка любимых городов. В этой функции, мы присваиваем результат вызова
+															функции/метода, которая будет отвечать за извлечение из «локального хранилища» значения, проверять было ли по ключу
+															значение, если да, то возвращаем «парс» этого значения, если нет, то возвращаем пустой массив. После чего мы пробегаемся
+															по всем значения массива, и добавляем их в список.
+														</li>
+														<li class="block-chapter__subitem">
+															3. После того, как вы нажимаете сердечко, можно либо добавить город в массив (если его нет), или удалить город из
+															массива (если он есть). Дальше мы вызываем функцию/метод по сохранению этого массива в «локальном хранилище», передав
+															его в эту функцию/метод. Эта функция будет переводить массив в строку и сохранять/устанавливать значение по «ключу». Так
+															же сразу после сохранения вызываем функцию по отрисовке/заполнению списка городов, чтоб наши действия были видны.
+														</li>
+														<li class="block-chapter__subitem">
+															4. Такой подход можно применить и к получению последнего города. К примеру, вы сделали сетевой запрос. Получили
+															корректный ответ, с объектом информации о погоде. Из этого объекта можно сохранять полученное имя. Так мы избежим
+															сохранения некорректных вводов в инпут.
+														</li>
+													</ul>
+												</div>
+												<div class="block-chapter__introduction -introduction">
+													Есть и другой метод, когда мы передаём в функции/методы не массив, а просто имя. А уже в этих функциях/методах мы будем
+													получать массив из локального хранилища, заносить в него информацию, и сохранять обратно.
+												</div>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+	<!-- Footer -->
+	<footer class="footer">
+	
+</footer>
+
+	</div>
+</body>
+<script src="./js/scripts.min.js"></script>
+
+</html>
